@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="takeValue()">
+        <input type="text" name="Name" placeholder="enter your name" id="name"> <br> <br>
+        <input type="text" name="lname" placeholder="enter your last name" id="lname"> <br> <br>
+        <input type="text" name="mobail" placeholder="enter your mobail" id="mobail"> <br> <br>
+
+        <input type="submit" value="submit">
+ 
+    </form>
+
+
+    <script>
+        function takeValue(){
+            var name= document.getElementById("name").value;
+            var first= document.getElementById("lname").value;
+            var mobail= document.getElementById("mobail").value;
+            document.write(" name is : " + name );
+
+            document.write(" <h4> first name : </h4>"+ first);
+            document.write( "<h4> mobail : </h4>" + mobail);
+        }
+    </script>
+</body>
+</html>
